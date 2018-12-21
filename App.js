@@ -18,8 +18,8 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello {this.state.name}</Text>
-        <Button onPress={() => {this.onClick()}} title='Click me'> </Button>
+        <Text style={styles.nameText}>Hello {this.state.name}</Text>
+        <Button color='#4169E1' onPress={() => {this.onClick()}} title='Click me'> </Button>
       </View>
     );
   }
@@ -32,4 +32,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  nameText: {
+    fontSize: 50,
+    padding: 15,
+  }
 });
